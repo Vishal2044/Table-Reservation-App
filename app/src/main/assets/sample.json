@@ -1,0 +1,19 @@
+{
+  "customers": {
+    "c1": {
+      "date": "19-may",
+      "guest": 5,
+      "mobile": 9904972638,
+      "name": "vishal",
+      "request": "Nothing",
+      "time": "12PM-13PM"
+    },
+    "c2": {
+      "date": "15-june",
+      "mobile": 9999999999,
+      "name": "jethalal",
+      "request": "fafda jalebi",
+      "time": "11PM-12PM"
+    }
+  }
+}

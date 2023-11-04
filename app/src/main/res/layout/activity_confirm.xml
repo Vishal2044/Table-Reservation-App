@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Blue Right Tick Image -->
+    <ImageView
+        android:id="@+id/rightTickImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/pngwing"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="Right Tick" />
+
+    <!-- Text Below the Image -->
+    <TextView
+        android:id="@+id/textBelowImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reservation Confirmed"
+        android:textSize="20sp"
+        android:textColor="#47FA4E"
+        android:layout_below="@id/rightTickImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- Call Now Button -->
+    <Button
+        android:id="@+id/callNowButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="WhatsApp"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:background="#007ACC"
+        android:layout_below="@id/textBelowImage"
+        android:layout_marginTop="32dp"
+        android:onClick="callPhoneNumber" />
+
+
+    <!-- Location Button -->
+    <Button
+        android:id="@+id/locationButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Location"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:background="#007ACC"
+        android:layout_below="@id/callNowButton"
+        android:layout_marginTop="16dp"
+        android:onClick="openLocationOnMap"/>
+
+
+
+    <!-- Go to Home Button -->
+
+    <!-- Cancel Reservation Button -->
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/locationButton"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="26dp"
+        android:background="#007ACC"
+        android:text="Go to Home"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/homeButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:background="#007ACC"
+        android:text="Cancel Reservation"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+</RelativeLayout>
